@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pricing Table Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #262626;
+        }
+
+        .pricing-area {
+            padding: 80px 0;
+        }
+
+        .section-header h2 {
+            font-family: baloo;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .single-pricing {
+            background: palegoldenrod;
+            padding-bottom: 20px;
+            overflow: hidden;
+
+        }
+
+        .single-pricing .deal-area {
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .single-pricing .deal-area:before {
+            content: '';
+            width: 100%;
+            height: 150%;
+            background: linear-gradient(to right, #97d456, #0c203e);
+            position: absolute;
+            top: -90%;
+            left: -20%;
+            z-index: -1;
+            transform: rotate(-42deg);
+        }
+
+        .single-pricing .deal-area:after {
+            content: '';
+            width: 100%;
+            height: 190%;
+            background: linear-gradient(to right, #97d456, #0c203e);
+            position: absolute;
+            top: -76%;
+            right: -16%;
+            transform: rotate(20deg);
+            z-index: -2;
+        }
+
+        .single-pricing .deal-price {
+            display: inline-block;
+            width: 50%;
+            padding: 30px 0;
+            float: left;
+            font-size: 30px;
+            color: #fff;
+            line-height: 20px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        .single-pricing .currency {
+            font-size: 20px;
+            position: relative;
+            top: -10px;
+            right: -3px;
+        }
+
+        .single-pricing .title {
+            display: inline-block;
+            width: 50%;
+            padding: 30px 0;
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            line-height: 20px;
+            text-transform: uppercase;
+            position: relative;
+            top: 10px;
+            right: 7px;
+        }
+
+        .single-pricing .content-area {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            text-align: center;
+            clear: both;
+        }
+
+        .single-pricing .content-area li {
+            font-size: 17px;
+            color: #838383;
+            line-height: 40px;
+        }
+
+        .single-pricing .price-btn {
+            display: block;
+            width: 50%;
+            z-index: 1;
+            text-transform: uppercase;
+            overflow: hidden;
+            position: relative;
+            transition: .5s;
+            text-decoration: none;
+            padding: 7px 0;
+            text-align: center;
+            background: linear-gradient(to right, #97d456, #0c203e);
+            border-radius: 5px;
+            margin: 0 auto;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .single-pricing {
+
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pricing-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="section-header text-center">
+                        <h2>Our Awesome Pricing</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="deal-area"><span class="deal-price">49 <span class="currency">$</span></span>
+                            <h3 class="title">Basic</h3>
+                        </div>
+                        <ul class="content-area">
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                        </ul>
+                        <a href="" class="price-btn">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="deal-area"><span class="deal-price">68 <span class="currency">$</span></span>
+                            <h3 class="title">Business</h3>
+                        </div>
+                        <ul class="content-area">
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                        </ul>
+                        <a href="" class="price-btn">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="deal-area"><span class="deal-price">78 <span class="currency">$</span></span>
+                            <h3 class="title">Premium</h3>
+                        </div>
+                        <ul class="content-area">
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                        </ul>
+                        <a href="" class="price-btn">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-pricing">
+                        <div class="deal-area"><span class="deal-price">99 <span class="currency">$</span></span>
+                            <h3 class="title">Gold</h3>
+                        </div>
+                        <ul class="content-area">
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                            <li>Lorem ipsum dolor.</li>
+                        </ul>
+                        <a href="" class="price-btn">Choose Plan</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
